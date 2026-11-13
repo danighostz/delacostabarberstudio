@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="De la Costa Barber Studio - Clean Barber en Acapulco. Cortes, barba y perfilado con estilo moderno." />
+  <title>De la Costa Barber Studio | Acapulco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="img/logo.jpg" alt="De la Costa Barber Studio" class="logo-img" />
+        <span>De la Costa <em>Barber Studio</em></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#instalaciones">Instalaciones</a></li>
+        <li><a href="#agendar">Agendar</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ===== HERO (solo banner1 fijo) ===== -->
+  <header class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-sub">Acapulco · Guerrero</p>
+      <h1>De la Costa <span>Barber Studio</span></h1>
+      <p class="hero-tagline">Clean Barber · Estilo moderno · Cuidado personal masculino</p>
+
+      <div class="hero-buttons">
+        <a href="https://www.instagram.com/delacostabs/"
+           target="_blank" rel="noopener" class="btn btn-gold">
+          <i class="fab fa-instagram"></i> Agendar Cita
+        </a>
+        <a href="#agendar" class="btn btn-outline">
+          <i class="fas fa-calendar-check"></i> Reservar en línea
+        </a>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJO81G8Yj5yoURx2aBVJaLaE0"
+           target="_blank" rel="noopener" class="btn btn-review-hero">
+          <i class="fab fa-google"></i> Dejar reseña en Google Maps
+        </a>
+      </div>
+
+      <div class="hero-social">
+        <a href="https://www.facebook.com/share/1Dxu7g5ZS7/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/delacostabs?rpxt=MXJwYmgzZXJ5aHl4cg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@delacostabs?_r=1&_t=ZS-9BLmv0srh1a" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://maps.app.goo.gl/ViaLVjbicmYJ4Scc8?g_st=ic" target="_blank" rel="noopener" aria-label="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+      </div>
+    </div>
+
+    <a href="#nosotros" class="scroll-down" aria-label="Bajar"><i class="fas fa-chevron-down"></i></a>
+  </header>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="about section" id="nosotros">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Nosotros</span>
+        <h2>El arte del <span class="gold">Clean Barber</span></h2>
+      </div>
+
+      <p class="lead">
+        De la Costa Barber Studio es un estudio de barbería de estilo moderno conocido por su concepto de
+        <strong>Clean Barber</strong>, enfocado en el cuidado personal masculino. Combinamos precisión, estilo
+        y el ambiente relajado del Pacífico para que salgas impecable.
+      </p>
+
+      <!-- Info nueva del negocio (sin emojis) -->
+      <div class="info-strip">
+        <div class="info-item">
+          <i class="fas fa-cut"></i>
+          <p>La Barber Studio más clean</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Plaza Bella Vista, Local 4, Av. Ejido 69</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <p>Lunes a Sábado · 11:00 am – 7:00 pm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTALACIONES ===== -->
+  <section class="facilities section" id="instalaciones">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Conoce nuestro espacio</span>
+        <h2>Nuestras <span class="gold">instalaciones</span></h2>
+      </div>
+      <p class="lead">
+        Un espacio diseñado para que tu visita sea una experiencia: ambiente relajado, equipo profesional
+        y el estilo de la costa que nos caracteriza.
+      </p>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="img/instalacion.jpg" alt="Instalaciones De la Costa Barber Studio" loading="lazy" />
+          <figcaption>Ambiente principal</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/instalacion2.jpg" alt="Área de corte" loading="lazy" />
+          <figcaption>Área de corte</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/instalacion3.jpg" alt="Detalles del estudio" loading="lazy" />
+          <figcaption>Detalles del estudio</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/instalacion4.jpg" alt="Zona de espera" loading="lazy" />
+          <figcaption>Zona de espera</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/instalacion5 (2).png" alt="Instalaciones De la Costa" loading="lazy" />
+          <figcaption>Instalaciones</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/instalacion6.png" alt="Instalaciones De la Costa" loading="lazy" />
+          <figcaption>Instalaciones</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BANNER INTERMEDIO (banner3) ===== -->
+  <section class="banner-parallax">
+    <div class="banner-overlay"></div>
+    <div class="banner-text">
+      <h2>Estilo que se siente como el mar</h2>
+      <p>Tu mejor versión comienza en la silla.</p>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="services section" id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Servicios</span>
+        <h2>Nuestros <span class="gold">precios</span></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-cut"></i>
+          <h3>Corte</h3>
+          <p>Fade, clásico o moderno a tu medida.</p>
+          <span class="price">$200</span>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>Barba</h3>
+          <p>Perfilado, recorte y cuidado de barba.</p>
+          <span class="price">$150</span>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-eye"></i>
+          <h3>Perfilado de Ceja</h3>
+          <p>Detalle fino que resalta tu mirada.</p>
+          <span class="price">$50</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AGENDAR CITA ===== -->
+  <section class="booking section" id="agendar">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Agenda tu cita</span>
+        <h2>Reserva tu <span class="gold">lugar</span></h2>
+      </div>
+
+      <div class="booking-grid">
+        <div class="booking-card">
+          <h3><i class="fas fa-calendar-check"></i> Solicitud de Cita</h3>
+          <p class="warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            Antes de agendar, debes transferir el <strong>50% del servicio</strong> y confirmar disponibilidad.
+          </p>
+
+          <form id="citaForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre del cliente</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required />
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">Servicio</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Selecciona un servicio</option>
+                <option value="Corte" data-precio="200">Corte — $200</option>
+                <option value="Barba" data-precio="150">Barba — $150</option>
+                <option value="Perfilado de Ceja" data-precio="50">Perfilado de Ceja — $50</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fecha">Fecha (Lun–Sáb)</label>
+                <input type="date" id="fecha" name="fecha" required />
+              </div>
+              <div class="form-group">
+                <label for="hora">Hora (11:00 am – 7:00 pm)</label>
+                <select id="hora" name="hora" required>
+                  <option value="" disabled selected>Selecciona una hora</option>
+                  <option value="11:00">11:00 am</option>
+                  <option value="12:00">12:00 pm</option>
+                  <option value="13:00">1:00 pm</option>
+                  <option value="14:00">2:00 pm</option>
+                  <option value="15:00">3:00 pm</option>
+                  <option value="16:00">4:00 pm</option>
+                  <option value="17:00">5:00 pm</option>
+                  <option value="18:00">6:00 pm</option>
+                  <option value="19:00">7:00 pm</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="resumen" id="resumen">
+              <div><span>Total servicio:</span> <strong id="totalServicio">$0</strong></div>
+              <div><span>Anticipo (50%):</span> <strong class="gold" id="anticipo">$0</strong></div>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-full">
+              <i class="fab fa-whatsapp"></i> Generar solicitud por WhatsApp
+            </button>
+            <p class="small-note">Al enviar, se abrirá WhatsApp con tu mensaje listo para confirmar disponibilidad.</p>
+          </form>
+        </div>
+
+        <div class="payment-card">
+          <h3><i class="fas fa-university"></i> Anticipo del 50%</h3>
+          <p>Realiza tu transferencia a:</p>
+
+          <div class="bank-box">
+            <div class="bank-row">
+              <p><strong>Banco:</strong> <span class="editable" id="datoBanco">Mercado Pago</span></p>
+              <button class="btn-copy" data-copy="datoBanco" aria-label="Copiar banco">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <div class="bank-row">
+              <p><strong>Beneficiario:</strong> <span class="editable" id="datoBeneficiario">Erick Alejandro Alcaraz Solis</span></p>
+              <button class="btn-copy" data-copy="datoBeneficiario" aria-label="Copiar beneficiario">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <div class="bank-row">
+              <p><strong>CLABE:</strong> <span class="editable" id="datoClabe">722969010711435043</span></p>
+              <button class="btn-copy" data-copy="datoClabe" aria-label="Copiar CLABE">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+            <p><strong>Concepto:</strong> Tu nombre + servicio</p>
+          </div>
+          <p class="note"><i class="fas fa-info-circle"></i> Envía tu comprobante por WhatsApp para confirmar tu cita.</p>
+
+          <div class="schedule">
+            <h4><i class="fas fa-clock"></i> Horario</h4>
+            <p><strong>Lunes a Sábado:</strong> 11:00 am – 7:00 pm</p>
+            <p><strong>Domingo:</strong> Cerrado</p>
+          </div>
+
+          <a href="https://wa.me/5217441725996?text=Hola%20delacostabs%2C%20env%C3%ADo%20mi%20comprobante%20de%20anticipo"
+             target="_blank" rel="noopener" class="btn btn-whatsapp btn-full">
+            <i class="fab fa-whatsapp"></i> Enviar comprobante por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== UBICACIÓN (sin redes) ===== -->
+  <section class="location section" id="ubicacion">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Encuéntranos</span>
+        <h2>Nuestra <span class="gold">ubicación</span></h2>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+          <p class="address">Av. Ejido 69 y Calle 2, Plaza Bella Vista, Local 4, Acapulco, Gro.</p>
+
+          <div class="location-actions">
+            <a href="https://maps.app.goo.gl/ViaLVjbicmYJ4Scc8?g_st=ic"
+               target="_blank" rel="noopener" class="btn btn-gold">
+              <i class="fas fa-directions"></i> Ver en Google Maps
+            </a>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJO81G8Yj5yoURx2aBVJaLaE0"
+               target="_blank" rel="noopener" class="btn btn-review google">
+              <i class="fab fa-google"></i> Dejar reseña en Google
+            </a>
+          </div>
+
+          <div class="schedule location-schedule">
+            <h4><i class="fas fa-clock"></i> Horario</h4>
+            <p><strong>Lunes a Sábado:</strong> 11:00 am – 7:00 pm</p>
+            <p><strong>Domingo:</strong> Cerrado</p>
+          </div>
+        </div>
+
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps?q=Av.+Ejido+69+y+Calle+2,+Plaza+Bella+Vista,+Local+4,+Acapulco,+Gro.&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación De la Costa Barber Studio">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REDES (solo redes, sin reseñas) ===== -->
+  <section class="social section" id="contacto">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Síguenos</span>
+        <h2>Síguenos en <span class="gold">Redes</span></h2>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/1Dxu7g5ZS7/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="https://www.instagram.com/delacostabs?rpxt=MXJwYmgzZXJ5aHl4cg==" target="_blank" rel="noopener" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@delacostabs?_r=1&_t=ZS-9BLmv0srh1a" target="_blank" rel="noopener" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://maps.app.goo.gl/ViaLVjbicmYJ4Scc8?g_st=ic" target="_blank" rel="noopener" class="social-btn maps"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <img src="img/logo.jpg" alt="Logo De la Costa BS" class="footer-logo" />
+      <p class="logo-footer">De la Costa <span>Barber Studio</span></p>
+      <p>© <span id="year"></span> De la Costa Barber Studio · Acapulco, Guerrero.</p>
+      <p class="small">Clean Barber · Cuidado personal masculino</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL DE SOLICITUD ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <h3><i class="fas fa-check-circle gold"></i> Tu solicitud está lista</h3>
+      <p class="modal-note">Envía el mensaje por WhatsApp para confirmar disponibilidad. Recuerda transferir el <strong>50% del anticipo</strong>.</p>
+      <textarea id="mensajeTexto" readonly></textarea>
+      <div class="modal-actions">
+        <a class="btn btn-whatsapp" id="btnWhatsapp" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+        </a>
+        <button class="btn btn-outline-dark" id="btnCopiar">
+          <i class="fas fa-copy"></i> Copiar mensaje
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL DE ALERTA BONITO ===== -->
+  <div class="alert-modal" id="alertModal" aria-hidden="true">
+    <div class="alert-content">
+      <div class="alert-icon">
+        <i class="fas fa-exclamation-circle"></i>
+      </div>
+      <h3 class="alert-title" id="alertTitle">Aviso</h3>
+      <p class="alert-message" id="alertMessage"></p>
+      <button class="btn btn-gold btn-full" id="alertClose">Entendido</button>
+    </div>
+  </div>
+
+  <!-- ===== LIGHTBOX GALERÍA ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="Vista ampliada" id="lightboxImg" />
+    <button class="lightbox-next" id="lightboxNext" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
