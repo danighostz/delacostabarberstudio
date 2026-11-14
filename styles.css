@@ -221,7 +221,7 @@ img { max-width: 100%; display: block; }
   color: var(--white); font-size: 1.4rem; cursor: pointer;
 }
 
-/* ========== HERO (banner1 fijo, sin carrusel) ========== */
+/* ========== HERO ========== */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -233,7 +233,8 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background: var(--black);
 }
-/* ========== HERO BG (PC) ========== */
+
+/* HERO BG — PC */
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
   background-image: url("img/banner1.jpg");
@@ -242,19 +243,20 @@ img { max-width: 100%; display: block; }
   background-attachment: fixed;
   animation: slowZoom 20s ease-in-out infinite alternate;
 }
-
-/* ========== HERO BG (CELULAR) ========== */
-@media (max-width: 768px) {
-  .hero-bg {
-    background-image: url("img/banner1celulares.jpg");
-    background-attachment: scroll;   /* mejor rendimiento en móvil */
-    background-position: center top; /* encuadra mejor la foto vertical */
-  }
-}
 @keyframes slowZoom {
   from { transform: scale(1); }
   to   { transform: scale(1.08); }
 }
+
+/* HERO BG — CELULAR */
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url("img/banner1celulares.jpg");
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
+
 .hero-overlay {
   position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(180deg, rgba(26,26,26,0.75) 0%, rgba(92,64,51,0.65) 60%, rgba(26,26,26,0.85) 100%);
@@ -324,7 +326,6 @@ img { max-width: 100%; display: block; }
   text-align: center; font-size: 1.08rem; color: #444;
 }
 
-/* Info strip centrada (nueva sección del negocio) */
 .info-strip {
   display: flex;
   flex-wrap: wrap;
@@ -360,7 +361,7 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
-/* ========== INSTALACIONES / GALERÍA (35% MÁS GRANDE) ========== */
+/* ========== INSTALACIONES / GALERÍA ========== */
 .facilities { background: var(--white); }
 .gallery {
   display: grid;
@@ -402,7 +403,7 @@ img { max-width: 100%; display: block; }
 }
 .gallery-item:hover figcaption { opacity: 1; transform: translateY(0); }
 
-/* ========== BANNER PARALLAX (usa banner3.jpg) ========== */
+/* ========== BANNER PARALLAX ========== */
 .banner-parallax {
   position: relative;
   min-height: 340px;
@@ -420,8 +421,7 @@ img { max-width: 100%; display: block; }
   background: rgba(27,79,114,0.6);
 }
 .banner-text { position: relative; z-index: 2; padding: 0 24px; }
-.banner-text h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-style: italic; }
-.banner-text p { margin-top: 10px; font-weight: 300; letter-spacing: 1px; }
+.banner-text h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-style: italic; line-height: 1.3; }
 
 /* ========== SERVICES ========== */
 .services-grid {
@@ -621,16 +621,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 20px;
 }
 
-.location-schedule { margin-bottom: 20px; }
-
-.location-social {
-  margin-bottom: 0;
-  justify-content: flex-start;
-}
-.location-social .social-btn {
-  font-size: 0.85rem;
-  padding: 10px 16px;
-}
+.location-schedule { margin-bottom: 0; }
 
 .location-map {
   min-height: 420px;
@@ -652,7 +643,7 @@ img { max-width: 100%; display: block; }
 .social { background: var(--white); }
 .social-links {
   display: flex; flex-wrap: wrap; justify-content: center;
-  gap: 14px; margin-bottom: 40px;
+  gap: 14px;
 }
 .social-btn {
   padding: 12px 22px; border-radius: 4px;
@@ -861,6 +852,34 @@ img { max-width: 100%; display: block; }
 .lightbox-prev { left: 18px; }
 .lightbox-next { right: 18px; }
 
+/* ========== BOTÓN FLOTANTE DE WHATSAPP ========== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  z-index: 1500;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45), 0 0 30px rgba(37, 211, 102, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulseWhatsapp 2s ease-in-out infinite;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.7), 0 0 45px rgba(37, 211, 102, 0.4);
+}
+@keyframes pulseWhatsapp {
+  0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45), 0 0 30px rgba(37, 211, 102, 0.25); }
+  50%      { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.7), 0 0 45px rgba(37, 211, 102, 0.45); }
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
   .booking-grid { grid-template-columns: 1fr; }
@@ -886,7 +905,6 @@ img { max-width: 100%; display: block; }
 
   .section { padding: 70px 0; }
   .banner-parallax { background-attachment: scroll; }
-  .hero-bg { background-attachment: scroll; }
   .booking-card, .payment-card { padding: 26px 20px; }
   .form-row { grid-template-columns: 1fr; }
   .hero-buttons .btn { width: 100%; justify-content: center; }
@@ -904,7 +922,14 @@ img { max-width: 100%; display: block; }
   .alert-message { font-size: 0.9rem; }
 
   .location-info { padding: 24px 20px; }
-  .location-social { justify-content: center; }
+
+  .whatsapp-float {
+    width: 54px;
+    height: 54px;
+    font-size: 1.7rem;
+    bottom: 18px;
+    right: 18px;
+  }
 }
 
 @media (max-width: 480px) {

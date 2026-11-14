@@ -34,7 +34,8 @@
       </ul>
     </div>
   </nav>
-  <!-- ===== HERO (solo banner1 fijo) ===== -->
+
+  <!-- ===== HERO ===== -->
   <header class="hero" id="inicio">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
@@ -45,11 +46,7 @@
       <p class="hero-tagline">Clean Barber · Estilo moderno · Cuidado personal masculino</p>
 
       <div class="hero-buttons">
-        <a href="https://www.instagram.com/delacostabs/"
-           target="_blank" rel="noopener" class="btn btn-gold">
-          <i class="fab fa-instagram"></i> Agendar Cita
-        </a>
-        <a href="#agendar" class="btn btn-outline">
+        <a href="#agendar" class="btn btn-gold">
           <i class="fas fa-calendar-check"></i> Reservar en línea
         </a>
         <a href="https://search.google.com/local/writereview?placeid=ChIJO81G8Yj5yoURx2aBVJaLaE0"
@@ -62,7 +59,7 @@
         <a href="https://www.facebook.com/share/1Dxu7g5ZS7/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/delacostabs?rpxt=MXJwYmgzZXJ5aHl4cg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@delacostabs?_r=1&_t=ZS-9BLmv0srh1a" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="https://maps.app.goo.gl/ViaLVjbicmYJ4Scc8?g_st=ic" target="_blank" rel="noopener" aria-label="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="https://maps.app.goo.gl/iAubVVkdDLa9oWtX9" target="_blank" rel="noopener" aria-label="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
       </div>
     </div>
 
@@ -74,20 +71,18 @@
     <div class="container">
       <div class="section-head">
         <span class="kicker">Nosotros</span>
-        <h2>El arte del <span class="gold">Clean Barber</span></h2>
+        <h2>EL ESTILO DE LA <span class="gold">CLEAN BARBER</span></h2>
       </div>
 
       <p class="lead">
-        De la Costa Barber Studio es un estudio de barbería de estilo moderno conocido por su concepto de
-        <strong>Clean Barber</strong>, enfocado en el cuidado personal masculino. Combinamos precisión, estilo
-        y el ambiente relajado del Pacífico para que salgas impecable.
+        En De La Costa Barber Studio nos distinguimos por ofrecer un concepto diferente al de las barberías urbanas:
+        un espacio diseñado para todas las edades, donde el ambiente y la comodidad son nuestro fuerte.
       </p>
 
-      <!-- Info nueva del negocio (sin emojis) -->
       <div class="info-strip">
         <div class="info-item">
           <i class="fas fa-cut"></i>
-          <p>La Barber Studio más clean</p>
+          <p>Tu barber studio de confianza</p>
         </div>
         <div class="info-item">
           <i class="fas fa-map-marker-alt"></i>
@@ -95,7 +90,7 @@
         </div>
         <div class="info-item">
           <i class="fas fa-clock"></i>
-          <p>Lunes a Sábado · 11:00 am – 7:00 pm</p>
+          <p>Lunes a Sábado de 11 am a 8 pm<br>(Última cita 7 pm)</p>
         </div>
       </div>
     </div>
@@ -109,8 +104,8 @@
         <h2>Nuestras <span class="gold">instalaciones</span></h2>
       </div>
       <p class="lead">
-        Un espacio diseñado para que tu visita sea una experiencia: ambiente relajado, equipo profesional
-        y el estilo de la costa que nos caracteriza.
+        Aquí encontrarás un entorno agradable y relajante, pensado para que disfrutes de tu tiempo
+        mientras nosotros nos encargamos de brindarte un servicio de la más alta calidad.
       </p>
 
       <div class="gallery">
@@ -120,11 +115,11 @@
         </figure>
         <figure class="gallery-item">
           <img src="img/instalacion2.jpg" alt="Área de corte" loading="lazy" />
-          <figcaption>Área de corte</figcaption>
+          <figcaption>Entrada Principal</figcaption>
         </figure>
         <figure class="gallery-item">
           <img src="img/instalacion3.jpg" alt="Detalles del estudio" loading="lazy" />
-          <figcaption>Detalles del estudio</figcaption>
+          <figcaption>Zona de espera</figcaption>
         </figure>
         <figure class="gallery-item">
           <img src="img/instalacion4.jpg" alt="Zona de espera" loading="lazy" />
@@ -142,16 +137,15 @@
     </div>
   </section>
 
-  <!-- ===== BANNER INTERMEDIO (banner3) ===== -->
+  <!-- ===== BANNER INTERMEDIO ===== -->
   <section class="banner-parallax">
     <div class="banner-overlay"></div>
     <div class="banner-text">
-      <h2>Estilo que se siente como el mar</h2>
-      <p>Tu mejor versión comienza en la silla.</p>
+      <h2>No solo vienes por un corte,<br>vienes por una experiencia.</h2>
     </div>
   </section>
 
-  <!-- ===== SERVICIOS ===== -->
+  <!-- ===== SERVICIOS (ordenados de menor a mayor precio) ===== -->
   <section class="services section" id="servicios">
     <div class="container">
       <div class="section-head">
@@ -161,22 +155,40 @@
 
       <div class="services-grid">
         <div class="service-card">
-          <i class="fas fa-cut"></i>
-          <h3>Corte</h3>
-          <p>Fade, clásico o moderno a tu medida.</p>
-          <span class="price">$200</span>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-user-tie"></i>
-          <h3>Barba</h3>
-          <p>Perfilado, recorte y cuidado de barba.</p>
-          <span class="price">$150</span>
-        </div>
-        <div class="service-card">
           <i class="fas fa-eye"></i>
           <h3>Perfilado de Ceja</h3>
           <p>Detalle fino que resalta tu mirada.</p>
           <span class="price">$50</span>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>Barba</h3>
+          <p>Recorte, perfilado con vapor de ozono.</p>
+          <span class="price">$150</span>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cut"></i>
+          <h3>Corte</h3>
+          <p>Fade, Clásicos, Corte a tijera y Textura.</p>
+          <span class="price">$200</span>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cut"></i>
+          <h3>Corte + Ceja</h3>
+          <p>Corte completo más perfilado de ceja.</p>
+          <span class="price">$250</span>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cut"></i>
+          <h3>Corte + Barba</h3>
+          <p>Servicio completo de corte y barba.</p>
+          <span class="price">$350</span>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-star"></i>
+          <h3>Corte + Barba + Ceja</h3>
+          <p>Experiencia completa De la Costa.</p>
+          <span class="price">$400</span>
         </div>
       </div>
     </div>
@@ -208,9 +220,12 @@
               <label for="servicio">Servicio</label>
               <select id="servicio" name="servicio" required>
                 <option value="" disabled selected>Selecciona un servicio</option>
-                <option value="Corte" data-precio="200">Corte — $200</option>
-                <option value="Barba" data-precio="150">Barba — $150</option>
                 <option value="Perfilado de Ceja" data-precio="50">Perfilado de Ceja — $50</option>
+                <option value="Barba" data-precio="150">Barba — $150</option>
+                <option value="Corte" data-precio="200">Corte — $200</option>
+                <option value="Corte + Ceja" data-precio="250">Corte + Ceja — $250</option>
+                <option value="Corte + Barba" data-precio="350">Corte + Barba — $350</option>
+                <option value="Corte + Barba + Ceja" data-precio="400">Corte + Barba + Ceja — $400</option>
               </select>
             </div>
 
@@ -277,11 +292,12 @@
 
           <div class="schedule">
             <h4><i class="fas fa-clock"></i> Horario</h4>
-            <p><strong>Lunes a Sábado:</strong> 11:00 am – 7:00 pm</p>
+            <p><strong>Lunes a Sábado:</strong> 11:00 am – 8:00 pm</p>
+            <p><strong>Última cita:</strong> 7:00 pm</p>
             <p><strong>Domingo:</strong> Cerrado</p>
           </div>
 
-          <a href="https://wa.me/5217441725996?text=Hola%20delacostabs%2C%20env%C3%ADo%20mi%20comprobante%20de%20anticipo"
+          <a href="https://wa.me/5217441045160?text=Hola%20delacostabs%2C%20env%C3%ADo%20mi%20comprobante%20de%20anticipo"
              target="_blank" rel="noopener" class="btn btn-whatsapp btn-full">
             <i class="fab fa-whatsapp"></i> Enviar comprobante por WhatsApp
           </a>
@@ -289,7 +305,8 @@
       </div>
     </div>
   </section>
-  <!-- ===== UBICACIÓN (sin redes) ===== -->
+
+  <!-- ===== UBICACIÓN ===== -->
   <section class="location section" id="ubicacion">
     <div class="container">
       <div class="section-head">
@@ -303,7 +320,7 @@
           <p class="address">Av. Ejido 69 y Calle 2, Plaza Bella Vista, Local 4, Acapulco, Gro.</p>
 
           <div class="location-actions">
-            <a href="https://maps.app.goo.gl/ViaLVjbicmYJ4Scc8?g_st=ic"
+            <a href="https://maps.app.goo.gl/iAubVVkdDLa9oWtX9"
                target="_blank" rel="noopener" class="btn btn-gold">
               <i class="fas fa-directions"></i> Ver en Google Maps
             </a>
@@ -315,14 +332,15 @@
 
           <div class="schedule location-schedule">
             <h4><i class="fas fa-clock"></i> Horario</h4>
-            <p><strong>Lunes a Sábado:</strong> 11:00 am – 7:00 pm</p>
+            <p><strong>Lunes a Sábado:</strong> 11:00 am – 8:00 pm</p>
+            <p><strong>Última cita:</strong> 7:00 pm</p>
             <p><strong>Domingo:</strong> Cerrado</p>
           </div>
         </div>
 
         <div class="location-map">
           <iframe
-            src="https://www.google.com/maps?q=Av.+Ejido+69+y+Calle+2,+Plaza+Bella+Vista,+Local+4,+Acapulco,+Gro.&output=embed"
+            src="https://www.google.com/maps?q=16.8633118,-99.9044245&z=17&output=embed"
             width="100%"
             height="100%"
             style="border:0;"
@@ -336,7 +354,7 @@
     </div>
   </section>
 
-  <!-- ===== REDES (solo redes, sin reseñas) ===== -->
+  <!-- ===== REDES ===== -->
   <section class="social section" id="contacto">
     <div class="container">
       <div class="section-head">
@@ -348,7 +366,7 @@
         <a href="https://www.facebook.com/share/1Dxu7g5ZS7/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
         <a href="https://www.instagram.com/delacostabs?rpxt=MXJwYmgzZXJ5aHl4cg==" target="_blank" rel="noopener" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
         <a href="https://www.tiktok.com/@delacostabs?_r=1&_t=ZS-9BLmv0srh1a" target="_blank" rel="noopener" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
-        <a href="https://maps.app.goo.gl/ViaLVjbicmYJ4Scc8?g_st=ic" target="_blank" rel="noopener" class="social-btn maps"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+        <a href="https://maps.app.goo.gl/iAubVVkdDLa9oWtX9" target="_blank" rel="noopener" class="social-btn maps"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
       </div>
     </div>
   </section>
@@ -400,6 +418,12 @@
     <img src="" alt="Vista ampliada" id="lightboxImg" />
     <button class="lightbox-next" id="lightboxNext" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
   </div>
+
+  <!-- ===== BOTÓN FLOTANTE DE WHATSAPP (esquina inferior derecha) ===== -->
+  <a href="https://wa.me/5217441045160?text=Hola%20delacostabs%2C%20quisiera%20agendar%20una%20cita"
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Agendar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>

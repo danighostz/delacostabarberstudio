@@ -2,8 +2,8 @@
    De la Costa Barber Studio — Lógica del sitio
    ========================================================= */
 
-// Número de WhatsApp oficial (52 1 744 172 5996)
-const WHATSAPP_NUMERO = "5217441725996";
+// Número de WhatsApp oficial (+52 744 104 5160)
+const WHATSAPP_NUMERO = "5217441045160";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -68,16 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
      (funciona en móvil, tablet, laptop y PC)
      ============================================ */
   async function copiarTexto(texto) {
-    // 1) API moderna si está disponible y en contexto seguro
     if (navigator.clipboard && window.isSecureContext) {
       try {
         await navigator.clipboard.writeText(texto);
         return true;
       } catch (err) {
-        // Si falla, cae al fallback
+        // cae al fallback
       }
     }
-    // 2) Fallback con textarea + execCommand
     try {
       const temp = document.createElement("textarea");
       temp.value = texto;
@@ -88,61 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
       temp.style.opacity = "0";
       document.body.appendChild(temp);
       temp.select();
-      temp.setSelectionRange(0, temp.value.length); // iOS
+      temp.setSelectionRange(0, temp.value.length);
       const ok = document.execCommand("copy");
       document.body.removeChild(temp);
       return ok;
     } catch (err) {
       return false;
     }
-  }
-
-  /* ============================================
-     CARRUSEL DEL HERO — DESACTIVADO
-     (Ahora solo hay banner1 fijo en el inicio.)
-     ============================================ */
-  const slides = document.querySelectorAll(".hero-slider .slide");
-  const dots = document.querySelectorAll("#sliderDots .dot");
-  const heroEl = document.querySelector(".hero");
-  let currentSlide = 0;
-  let sliderTimer = null;
-  const SLIDER_INTERVAL = 5000;
-
-  function goToSlide(index) {
-    slides.forEach((s, i) => s.classList.toggle("active", i === index));
-    dots.forEach((d, i) => d.classList.toggle("active", i === index));
-    currentSlide = index;
-  }
-
-  function nextSlide() {
-    if (!slides.length) return;
-    goToSlide((currentSlide + 1) % slides.length);
-  }
-
-  function startSlider() {
-    stopSlider();
-    if (slides.length > 1) sliderTimer = setInterval(nextSlide, SLIDER_INTERVAL);
-  }
-
-  function stopSlider() {
-    if (sliderTimer) { clearInterval(sliderTimer); sliderTimer = null; }
-  }
-
-  if (slides.length > 1) {
-    dots.forEach(dot => {
-      dot.addEventListener("click", () => {
-        goToSlide(Number(dot.dataset.slide));
-        startSlider();
-      });
-    });
-    if (heroEl) {
-      heroEl.addEventListener("mouseenter", stopSlider);
-      heroEl.addEventListener("mouseleave", startSlider);
-    }
-    document.addEventListener("visibilitychange", () => {
-      document.hidden ? stopSlider() : startSlider();
-    });
-    startSlider();
   }
 
   /* ============================================
@@ -165,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalServicioEl = document.getElementById("totalServicio");
   const anticipoEl = document.getElementById("anticipo");
   const fechaInput = document.getElementById("fecha");
-  const horaInput = document.getElementById("hora"); // <select>
+  const horaInput = document.getElementById("hora");
 
   if (form && servicioSel && fechaInput && horaInput) {
 
@@ -208,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
+      // Horas permitidas: 11:00 am a 7:00 pm (última cita)
       const horasPermitidas = ["11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"];
       if (!horasPermitidas.includes(hora)) {
         showAlert("Hora inválida", "La hora debe estar entre 11:00 am y 7:00 pm (Lunes a Sábado).");
